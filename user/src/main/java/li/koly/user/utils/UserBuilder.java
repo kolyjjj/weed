@@ -12,7 +12,7 @@ public class UserBuilder {
 
     public User build() {
         User user = new User();
-        user.setUserId(userId);
+        user.setId(userId);
         user.setLoginName(loginName);
         user.setFirstName(firstName);
         user.setMiddleName(middleName);

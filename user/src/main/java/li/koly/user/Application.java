@@ -24,8 +24,8 @@ public class Application {
             userService.save(
                     new UserBuilder()
                             .withId(123L)
-                            .withLoginName("koly")
-                            .withFirstName("koly")
+                            .withLoginName("koly1")
+                            .withFirstName("koly1")
                             .withLastName("Li")
                             .build()
             );

@@ -15,7 +15,7 @@ public class UserService {
     }
 
     public User getUser(String name) {
-        User user = userRepository.findOne((root, query, cb) -> cb.equal(root.get("name"), name));
+        User user = userRepository.findOne((root, query, cb) -> cb.equal(root.get("loginName"), name));
         return user;
     }
 
