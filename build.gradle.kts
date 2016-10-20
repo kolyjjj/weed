@@ -1,1 +1,3 @@
-apply<ApplicationPlugin>()
+allprojects {
+    apply<ApplicationPlugin>()
+}

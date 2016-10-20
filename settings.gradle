@@ -1,3 +1,12 @@
 rootProject.name = 'weed'
-rootProject.buildFileName = 'build.gradle.kts'
+
+def configureGradleScriptKotlinOn(ProjectDescriptor project) {
+    project.buildFileName = 'build.gradle.kts'
+    project.children.each { configureGradleScriptKotlinOn(it) }
+}
+
+include 'book', 'user'
+
+configureGradleScriptKotlinOn rootProject
+
 
