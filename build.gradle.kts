@@ -1,3 +1,3 @@
-allprojects {
-    apply<ApplicationPlugin>()
+subprojects{
+    apply<JavaPlugin>()
 }
