@@ -1,4 +1,4 @@
-package li.koly.user;
+package li.koly;
 
 import li.koly.user.service.UserService;
 import li.koly.user.utils.UserBuilder;

@@ -1,5 +1,4 @@
 import org.flywaydb.gradle.*
-import org.springframework.boot.gradle.plugin.SpringBootPlugin
 
 buildscript {
     repositories {
@@ -12,12 +11,6 @@ buildscript {
 }
 
 apply<FlywayPlugin>()
-apply<SpringBootPlugin>()
-
-//configure<SpringBootPluginExtension> {
-//
-//}
-
 configure<FlywayExtension> {
     url = "jdbc:mysql://localhost/test?useSSL=false"
     user = "dbuser2"
@@ -25,11 +18,6 @@ configure<FlywayExtension> {
     driver = "com.mysql.cj.jdbc.Driver"
     setLocations("filesystem:${project.projectDir}/dbmigration")
 }
-
-task("st") {
-    println("${project.projectDir}/dbmigration")
-}
-
 
 dependencies {
     compile("mysql:mysql-connector-java:6.0.5")
