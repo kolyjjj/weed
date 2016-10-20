@@ -5,7 +5,6 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE")
         classpath("org.flywaydb:flyway-gradle-plugin:4.0.3")
     }
 }
@@ -19,7 +18,4 @@ configure<FlywayExtension> {
     setLocations("filesystem:${project.projectDir}/dbmigration")
 }
 
-dependencies {
-    compile("mysql:mysql-connector-java:6.0.5")
-}
 

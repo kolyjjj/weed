@@ -29,7 +29,7 @@ apply<SpringBootPlugin>()
 //
 //}
 
-subprojects{
+subprojects {
 
     repositories {
         mavenCentral()
@@ -43,4 +43,5 @@ subprojects{
 
 dependencies {
     compile(project(":user"))
+    compile("mysql:mysql-connector-java:6.0.5")
 }
