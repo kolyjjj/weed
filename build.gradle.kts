@@ -1,3 +1,14 @@
+// uncomment when you want the auto completion work in kts files in sub projects
+//buildscript {
+//    repositories {
+//        mavenCentral()
+//    }
+//    dependencies {
+//        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE")
+//        classpath("org.flywaydb:flyway-gradle-plugin:4.0.3")
+//    }
+//}
+
 subprojects{
     apply<JavaPlugin>()
 
