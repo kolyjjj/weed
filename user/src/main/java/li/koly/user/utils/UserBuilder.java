@@ -8,9 +8,11 @@ public class UserBuilder {
     private String firstName;
     private String middleName;
     private String lastName;
+    private Long userId;
 
     public User build() {
         User user = new User();
+        user.setUserId(userId);
         user.setLoginName(loginName);
         user.setFirstName(firstName);
         user.setMiddleName(middleName);
@@ -35,6 +37,11 @@ public class UserBuilder {
 
     public UserBuilder withLastName(String lastName) {
         this.lastName = lastName;
+        return this;
+    }
+
+    public UserBuilder withId(Long id) {
+        this.userId = id;
         return this;
     }
 }
