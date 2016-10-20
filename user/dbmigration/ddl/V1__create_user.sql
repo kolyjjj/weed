@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS user;
+CREATE TABLE user (
+    id INT NOT NULL UNIQUE,
+    loginName VARCHAR(50) NOT NULL UNIQUE,
+    firstName VARCHAR(50),
+    middleName VARCHAR(50),
+    lastName VARCHAR(50),
+    PRIMARY KEY(id)
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;

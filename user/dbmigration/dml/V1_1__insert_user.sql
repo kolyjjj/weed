@@ -1,0 +1,1 @@
+INSERT INTO user VALUES (10000, "koly", "koly", NULL, "Li");
