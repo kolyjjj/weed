@@ -21,6 +21,7 @@ allprojects {
 
     dependencies {
         compile("org.springframework.boot:spring-boot-starter-data-jpa:1.4.1.RELEASE")
+        compile("org.springframework.boot:spring-boot-starter-web:1.4.1.RELEASE")
     }
 }
 
