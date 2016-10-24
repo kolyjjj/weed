@@ -22,6 +22,7 @@ allprojects {
     dependencies {
         compile("org.springframework.boot:spring-boot-starter-data-jpa:1.4.1.RELEASE")
         compile("org.springframework.boot:spring-boot-starter-web:1.4.1.RELEASE")
+        compile("mysql:mysql-connector-java:6.0.5")
     }
 }
 
@@ -39,10 +40,10 @@ subprojects {
     dependencies {
         compile("com.google.guava:guava:20.0-rc1")
         compile("joda-time:joda-time:2.9.4")
-        compile("mysql:mysql-connector-java:6.0.5")
     }
 }
 
 dependencies {
     compile(project(":user"))
+    compile(project(":book"))
 }
