@@ -1,6 +1,11 @@
 package li.koly.book.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Book {
+    @Id
     private String ISBN;
     private String title;
     private String subTitle;
