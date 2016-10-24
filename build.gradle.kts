@@ -39,10 +39,10 @@ subprojects {
     dependencies {
         compile("com.google.guava:guava:20.0-rc1")
         compile("joda-time:joda-time:2.9.4")
+        compile("mysql:mysql-connector-java:6.0.5")
     }
 }
 
 dependencies {
     compile(project(":user"))
-    compile("mysql:mysql-connector-java:6.0.5")
 }
