@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS user;
-CREATE TABLE user (
+DROP TABLE IF EXISTS `User`;
+CREATE TABLE `User` (
     id INT NOT NULL UNIQUE,
     login_name VARCHAR(50) NOT NULL UNIQUE,
     first_name VARCHAR(50),

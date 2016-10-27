@@ -1,1 +1,1 @@
-INSERT INTO user VALUES (10000, "koly", "koly", NULL, "Li");
+INSERT INTO `User` VALUES (10000, "Ukoly", "koly", NULL, "Li");
